@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 import java.util.ArrayList;
 
 class Main {
@@ -171,8 +170,7 @@ class Main {
         }
 
         public String toString() {
-            return "Отдел " + name + ", начальник: "
-                    + (boss == null ? "не назначен" : boss.name);
+            return "Отдел " + name + ", начальник: " + boss.name;
         }
     }
 
@@ -377,7 +375,7 @@ class Main {
         System.out.println("Начальник отдела: " + otdel.boss.name);
         System.out.println("\nСотрудники отдела:");
         for (Sotrudnik employee : otdel.employees) {
-            System.out.println(employee.name);
+            System.out.println(employee);
         }
 
         System.out.println("\nКоллеги " + employeeName + ":");
